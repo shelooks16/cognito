@@ -15,10 +15,10 @@ const breakpoints = {
 const theme: DefaultTheme = {
   fontFamily: 'Roboto, sans-serif',
   colors: {
-    main: '#9f38e8',
-    mainHover: '#7940a3',
-    secondary: '#353535',
-    secondaryHover: '#353535',
+    main: '#1acd81',
+    mainDark: '#108554',
+    secondary: '#999898',
+    secondaryDark: '#7b7a7a',
   },
   media: {
     _: `(min-width: ${breakpoints._})`,
@@ -35,6 +35,14 @@ const GlobalStyles = createGlobalStyle`
     font-size: 18px;
     margin: 0;
     padding: 0;
+  }
+
+  h1,h2,h3,h4,h5,h6 {
+    margin: 0px;
+  }
+
+  p {
+    margin: 0px;
   }
 `;
 

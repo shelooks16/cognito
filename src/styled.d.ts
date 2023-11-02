@@ -7,9 +7,9 @@ declare module 'styled-components' {
 
     colors: {
       main: string;
-      mainHover: string;
+      mainDark: string;
       secondary: string;
-      secondaryHover: string;
+      secondaryDark: string;
     };
 
     media: {

@@ -10,7 +10,7 @@ export const useProducts = () => {
     setError(null);
 
     try {
-      const data = await getProducts({ useMocks: true });
+      const data = await getProducts({ useMocks: false });
       setData(data);
     } catch (err: any) {
       setError(err);
