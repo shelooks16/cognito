@@ -103,7 +103,9 @@ const ProductDetail = ({ product }: ProductDetailProps) => {
       <StyledContent>
         <StyledProductHeader>
           <StyledName>{product.name}</StyledName>
-          <StyledPrice>{formatMoney(product.price)}</StyledPrice>
+          <StyledPrice data-testid="product-money">
+            {formatMoney(product.price)}
+          </StyledPrice>
         </StyledProductHeader>
 
         <StyledProductDescription>
@@ -111,7 +113,12 @@ const ProductDetail = ({ product }: ProductDetailProps) => {
         </StyledProductDescription>
       </StyledContent>
 
-      <StyledAddMeBtn disabled={wasAdded} type="button" onClick={handleAddMe}>
+      <StyledAddMeBtn
+        data-testid="product-add-to-basket-btn"
+        disabled={wasAdded}
+        type="button"
+        onClick={handleAddMe}
+      >
         {wasAdded ? 'Added' : 'Add to basket'}
       </StyledAddMeBtn>
     </StyledWrapper>
